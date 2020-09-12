@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
         NavigationUI.setupWithNavController(bottomNavView, navHostFragment.navController)
 
-        var appBarConfiguration = AppBarConfiguration(navHostFragment.navController.graph)
-        setupActionBarWithNavController(navHostFragment.navController, appBarConfiguration)
+//        var appBarConfiguration = AppBarConfiguration(navHostFragment.navController.graph)
+//        setupActionBarWithNavController(navHostFragment.navController, appBarConfiguration)
     }
 
 
