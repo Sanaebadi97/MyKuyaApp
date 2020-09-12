@@ -51,7 +51,6 @@ dependencies {
     implementation(Libraries.constraintLayout)
     implementation(Libraries.material)
     implementation(Libraries.legacy)
-    implementation(Libraries.ahbottomnavigation)
 
     implementation(Libraries.glide)
     implementation(Libraries.glideCompiler)
