@@ -19,7 +19,7 @@ class MykuyaApplication : Application(), HasAndroidInjector {
     }
 
     @Inject
-    lateinit var fragmentInjector: DispatchingAndroidInjector<Fragment>
+    lateinit var fragmentInjector: DispatchingAndroidInjector<androidx.fragment.app.Fragment>
 
 
     override fun onCreate() {

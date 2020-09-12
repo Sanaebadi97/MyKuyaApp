@@ -39,7 +39,6 @@ object Libraries {
         const val arrowVersion = "1.0.0"
         const val glideVersion = "4.11.0"
         const val legacyVersion = "1.0.0"
-        const val ahbottomnavigationVersion = "2.3.4"
 
     }
 
@@ -53,7 +52,6 @@ object Libraries {
     const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
     const val glideCompiler = "com.github.bumptech.glide:compiler:${Versions.glideVersion}"
     const val legacy = "androidx.legacy:legacy-support-v4:${Versions.legacyVersion}"
-    const val ahbottomnavigation = "com.aurelhubert:ahbottomnavigation:${Versions.ahbottomnavigationVersion}"
 
 
 }

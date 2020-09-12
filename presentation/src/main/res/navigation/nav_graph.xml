@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="info.sanaebadi.mykuya.mvvm.feature.view.fragment.HomeFragment"
         android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="info.sanaebadi.mykuya.mvvm.feature.view.fragment.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="info.sanaebadi.mykuya.mvvm.feature.view.fragment.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="info.sanaebadi.mykuya.mvvm.feature.view.fragment.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/myJobFragment"
+        android:name="info.sanaebadi.mykuya.mvvm.feature.view.fragment.MyJobFragment"
+        android:label="fragment_my_job"
+        tools:layout="@layout/fragment_my_job" />
 </navigation>
