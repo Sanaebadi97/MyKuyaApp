@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/default_margin_quarter"
+    app:cardCornerRadius="@dimen/default_margin_half"
+    app:cardElevation="@dimen/default_margin_quarter"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_new"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/list_your_service" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_new_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin_quarter"
+            android:layout_marginTop="@dimen/default_margin_half"
+            android:layout_marginEnd="@dimen/default_margin_quarter"
+            android:fontFamily="@font/overpass_semi_bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_huge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_new"
+            tools:text="How to use the app" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_new_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin_quarter"
+            android:layout_marginTop="@dimen/default_margin_half"
+            android:layout_marginEnd="@dimen/default_margin_quarter"
+            android:fontFamily="@font/overpass_thin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_huge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_new_title"
+            tools:text="How to use the app" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/default_margin_half"
+            android:background="@color/colorGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_new_description" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_semi_bold"
+            android:text="@string/learn_more"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_huge"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:paddingBottom="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
