@@ -42,11 +42,16 @@ android {
 
 dependencies {
 
+    implementation(project(mapOf("path" to ":data")))
+    api(project(mapOf("path" to ":domain")))
+
     implementation(Libraries.kotlinStdLib)
     implementation(Libraries.appCompat)
     implementation(Libraries.ktxCore)
     implementation(Libraries.constraintLayout)
     implementation(Libraries.material)
+    implementation(Libraries.legacy)
+    implementation(Libraries.ahbottomnavigation)
 
     implementation(Libraries.glide)
     implementation(Libraries.glideCompiler)
