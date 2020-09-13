@@ -1,10 +1,11 @@
 package info.sanaebadi.entity.product
-import com.squareup.moshi.JsonClass
 
 import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+import info.sanaebadi.entity.base.BaseEntity
 
 
-class ProductEntity : ArrayList<ProductEntityItem>()
+data class ProductEntity(val productEntityItem: ProductEntityItem) : BaseEntity
 
 @JsonClass(generateAdapter = true)
 data class ProductEntityItem(
@@ -12,7 +13,7 @@ data class ProductEntityItem(
     val categoryName: String,
     @Json(name = "products")
     val productItemEntities: List<ProductItemEntity>
-)
+) : BaseEntity
 
 @JsonClass(generateAdapter = true)
 data class ProductItemEntity(
@@ -22,4 +23,4 @@ data class ProductItemEntity(
     val icon: String,
     @Json(name = "id")
     val id: Int
-)
+) : BaseEntity

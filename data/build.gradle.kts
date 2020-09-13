@@ -29,7 +29,7 @@ android {
     productFlavors {
         create("mykuya") {
             setDimension("Mykuya")
-            buildConfigField("String", "API_BASE_URL", "\"https://client-api-dev.mykuyainternals.com/\"")
+            buildConfigField("String", "API_BASE_URL", "\"https://client-api.mykuyadev.info/client/v1/\"")
         }
 
     }
